@@ -14,13 +14,7 @@ To write a program to implement the linear regression using gradient descent.
 4.  End the program.
 
 ## Program:
-```
-/*
-Program to implement the linear regression using gradient descent.
-Developed by: 
-RegisterNumber:  
-*/
-```
+ghe
 
 ## Output:
 ![linear regression using gradient descent](sam.png)
