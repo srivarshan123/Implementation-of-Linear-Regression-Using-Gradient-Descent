@@ -14,6 +14,7 @@ To write a program to implement the linear regression using gradient descent.
 4.  End the program.
 
 ## Program:
+'''
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as py
@@ -68,9 +69,15 @@ py.title("study hours vs scores")
 py.plot(loss)
 py.xlabel("iterations")
 py.ylabel("loss")
+'''
+/*
+Program to implement the linear regression using gradient descent.
+Developed by: Srivarshan.S
+RegisterNumber:  212221040163
+*/
 
 ## Output:
-![linear regression using gradient descent](sam.png)
+![linear regression using gradient descent]()
 
 
 ## Result:
