@@ -15,41 +15,25 @@ To write a program to implement the linear regression using gradient descent.
 
 ## Program:
 '''
+/*
+Program to implement the linear regression using gradient descent.
+Developed by: Srivarshan.S
+RegisterNumber:  212221040163
+*/
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as py
+data=pd.read_csv("student_scores .csv")
 data.head()
-Hours	Scores
-0	2.5	21
-1	5.1	47
-2	3.2	27
-3	8.5	75
-4	3.5	30
 data.isnull().sum()
-Hours     0
-Scores    0
-dtype: int64
 x=data.Hours
 x.head()
-0    2.5
-1    5.1
-2    3.2
-3    8.5
-4    3.5
-Name: Hours, dtype: float64
 y=data.Scores
 y.head()
-0    21
-1    47
-2    27
-3    75
-4    30
-Name: Scores, dtype: int64
 n=len(x)
 m=0
 c=0
 L=0.01
-from typing import ChainMap
 loss=[]
 for i in range(10000):
   ypred=m*x+c
@@ -62,20 +46,14 @@ for i in range(10000):
   print(m,c)
   y_pred=m*x+c
   py.scatter(x,y,color="red")
-py.plot(x,y_pred)
-py.xlabel("study hours")
-py.ylabel("scores")
-py.title("study hours vs scores")
-py.plot(loss)
-py.xlabel("iterations")
-py.ylabel("loss")
+  py.plot(x,y_pred)
+  py.xlabel("study hours")
+  py.ylabel("scores")
+  py.title("study hours vs scores")
+  py.plot(loss)
+  py.xlabel("iterations")
+  py.ylabel("loss")
 '''
-/*
-Program to implement the linear regression using gradient descent.
-Developed by: Srivarshan.S
-RegisterNumber:  212221040163
-*/
-
 ## Output:
 ![linear regression using gradient descent](https://github.com/srivarshan123/Implementation-of-Linear-Regression-Using-Gradient-Descent/blob/main/WhatsApp%20Image%202022-05-09%20at%2011.30.25%20AM%20(1).jpeg)
 ![linear regression using gradient descent](https://github.com/srivarshan123/Implementation-of-Linear-Regression-Using-Gradient-Descent/blob/main/WhatsApp%20Image%202022-05-09%20at%2011.30.25%20AM%20(2).jpeg)
