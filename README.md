@@ -53,10 +53,11 @@ dataset.tail()
 
 '''
 ## Output:
-![linear regression using gradient descent]()
-![linear regression using gradient descent]()
-![linear regression using gradient descent]()
-![linear regression using gradient descent]()
+![linear regression using gradient descent](https://github.com/srivarshan123/Implementation-of-Linear-Regression-Using-Gradient-Descent/blob/main/assign.jpeg)
+![linear regression using gradient descent](https://github.com/srivarshan123/Implementation-of-Linear-Regression-Using-Gradient-Descent/blob/main/datahead.jpeg)
+![linear regression using gradient descent](https://github.com/srivarshan123/Implementation-of-Linear-Regression-Using-Gradient-Descent/blob/main/datatail.jpeg)
+![linear regression using gradient descent](https://github.com/srivarshan123/Implementation-of-Linear-Regression-Using-Gradient-Descent/blob/main/output.jpeg)
+![linear regression using gradient descent](https://github.com/srivarshan123/Implementation-of-Linear-Regression-Using-Gradient-Descent/blob/main/output2.jpeg)
 
 
 ## Result:
