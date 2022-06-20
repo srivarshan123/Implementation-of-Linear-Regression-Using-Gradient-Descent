@@ -23,37 +23,34 @@ RegisterNumber:  212221040163
 
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as py
-data=pd.read_csv("student_scores .csv")
-data.head()
-data.isnull().sum()
-x=data.Hours
-x.head()
-y=data.Scores
-y.head()
-n=len(x)
-m=0
-c=0
-L=0.01
-loss=[]
-for i in range(10000):
-  ypred=m*x+c
-  MSE=(1/n)*sum((ypred-y)*2)
-  dm=(2/n)*sum(x*(ypred-y))
-  dc=(2/n)*sum(ypred-y)
-  c=c-L*dc
-  m=m-L*dc
-  loss.append(MSE)
-  print(m,c)
-  y_pred=m*x+c
-  py.scatter(x,y,color="red")
-  py.plot(x,y_pred)
-  py.xlabel("study hours")
-  py.ylabel("scores")
-  py.title("study hours vs scores")
-  py.plot(loss)
-  py.xlabel("iterations")
-  py.ylabel("loss")
+import matplotlib.pyplot as plt
+dataset=pd.read_csv("student_scores (2).csv")
+dataset.head()
+X=dataset.iloc[:,:-1].values#assigning column hours to x 
+Y=dataset.iloc[:,1].values#assigning column scores to y
+print(X)
+print(Y)
+from sklearn.model_selection import train_test_split
+X_train,X_test,Y_train,Y_test=train_test_split(X,Y,test_size=1/3,random_state=0)
+from sklearn.linear_model import LinearRegression
+regressor=LinearRegression()
+regressor.fit(X_train,Y_train)
+y_pred=regressor.predict(X_test)
+plt.scatter(X_train,Y_train,color='green')
+plt.plot(X_train,regressor.predict(X_train),color='brown')
+plt.title("hours vs scores(Training set)")
+plt.xlabel("hours")
+plt.ylabel("scores")
+plt.show()
+y_pred=regressor.predict(X_test)
+plt.scatter(X_test,Y_test,color='green')
+plt.plot(X_test,regressor.predict(X_test),color='blue')
+plt.title("hours vs scores(Testing set)")
+plt.xlabel("hours")
+plt.ylabel("scores")
+plt.show()
+dataset.tail()
+
 '''
 ## Output:
 ![linear regression using gradient descent]()
