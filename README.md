@@ -51,7 +51,6 @@ plt.ylabel("scores")
 plt.show()
 dataset.tail()
 
-
 '''
 ## Output:
 ![linear regression using gradient descent]()
