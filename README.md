@@ -20,6 +20,7 @@ Program to implement the linear regression using gradient descent.
 Developed by: Srivarshan.S
 RegisterNumber:  212221040163
 */
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as py
@@ -55,10 +56,10 @@ for i in range(10000):
   py.ylabel("loss")
 '''
 ## Output:
-![linear regression using gradient descent](https://github.com/srivarshan123/Implementation-of-Linear-Regression-Using-Gradient-Descent/blob/main/WhatsApp%20Image%202022-05-09%20at%2011.30.25%20AM%20(1).jpeg)
-![linear regression using gradient descent](https://github.com/srivarshan123/Implementation-of-Linear-Regression-Using-Gradient-Descent/blob/main/WhatsApp%20Image%202022-05-09%20at%2011.30.25%20AM%20(2).jpeg)
-![linear regression using gradient descent](https://github.com/srivarshan123/Implementation-of-Linear-Regression-Using-Gradient-Descent/blob/main/WhatsApp%20Image%202022-05-09%20at%2011.30.25%20AM%20(3).jpeg)
-![linear regression using gradient descent](https://github.com/srivarshan123/Implementation-of-Linear-Regression-Using-Gradient-Descent/blob/main/WhatsApp%20Image%202022-05-09%20at%2011.30.25%20AM.jpeg)
+![linear regression using gradient descent]()
+![linear regression using gradient descent]()
+![linear regression using gradient descent]()
+![linear regression using gradient descent]()
 
 
 ## Result:
