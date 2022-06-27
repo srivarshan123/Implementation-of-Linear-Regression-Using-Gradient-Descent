@@ -20,14 +20,13 @@ Program to implement the linear regression using gradient descent.
 Developed by: Srivarshan.S
 RegisterNumber:  212221040163
 */
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 dataset=pd.read_csv("student_scores (2).csv")
 dataset.head()
-X=dataset.iloc[:,:-1].values #assigning column hours to x 
-Y=dataset.iloc[:,1].values #assigning column scores to y
+X=dataset.iloc[:,:-1].values#assigning column hours to x 
+Y=dataset.iloc[:,1].values#assigning column scores to y
 print(X)
 print(Y)
 from sklearn.model_selection import train_test_split
